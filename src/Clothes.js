@@ -4,10 +4,10 @@ function Clothes({item}){
     return(
         <div className="products">
 {item.map((element=>{
-    const{id,name,searchTerm,price,image}=element;
+    const{id,name,searchTerm,price,title,image}=element;
     return(
         <div className="product-card" key={id}>
-            <Link to={`/about/${item.title}`}>
+            <Link to={`/about/${title}`}>
             <img src={image} width="400px" height="500px" />
             </Link>
             <div className="product-info">
